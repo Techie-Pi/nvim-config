@@ -24,6 +24,7 @@ Plug 'PhilRunninger/nerdtree-visual-selection'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'phaazon/hop.nvim'
+Plug 'akinsho/toggleterm.nvim'
 Plug 'neoclide/coc.nvim'
 " :CocInstall coc-snippets
 " :CocInstall coc-tsserver
@@ -36,6 +37,7 @@ set encoding=UTF-8
 call plug#end()
 
 :lua require("hop").setup()
+:lua require("toggleterm").setup()
 
 nnoremap <C-M-f> :NERDTreeFocus<CR>
 nnoremap <C-M-n> :NERDTree<CR>
